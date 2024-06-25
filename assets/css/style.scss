@@ -1,0 +1,59 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+input:focus {
+    outline: none !important;
+}
+
+$primary-color: #ff6154;
+$secondary-color: #ffc421;
+
+header {
+    .nav-link {
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: -29px;
+            left: 0;
+            width: 0%;
+            height: 2px;
+            background: $primary-color;
+            transition: width .4s ease;
+        }
+        &.active::before {
+            width: 100%;
+        }
+        &:hover::before {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width:1024px) {
+    header {
+        .nav-link {
+            position: relative;
+            &::before {
+                content: unset;
+            }
+            &.active {
+                color: $primary-color;
+            }
+            &:hover {
+                color: $primary-color;
+            }
+        }
+    }
+}
