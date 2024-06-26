@@ -8,7 +8,7 @@ class CustomHeader extends HTMLElement {
                         <img class="w-[60px] md:w-[80px]" src="assets/images/logo.png" alt="logo">
                     </a>
                     <nav class="flex items-center justify-center gap-4 md:gap-8 lg:gap-16 hidden lg:flex">
-                        <a class="text-base font-semibold text-white nav-link active" href="index.html">Home</a>
+                        <a class="text-base font-semibold text-white nav-link" href="index.html">Home</a>
                         <a class="text-base font-semibold text-white nav-link" href="pricing.html">Pricing</a>
                         <a class="text-base font-semibold text-white nav-link" href="contact.html">Contact Us</a>
                     </nav>
@@ -36,6 +36,24 @@ class CustomHeader extends HTMLElement {
                 </div>
             </header>
         `;
+    }
+
+    connectedCallback() {
+        this.setActiveLink();
+    }
+
+    setActiveLink() {
+        const path = window.location.pathname;
+        const navLinks = this.querySelectorAll('.nav-link')
+        navLinks.forEach((link) => {
+            const currentPath = path.split('/')[1]
+            if(link.getAttribute('href') === currentPath) {
+                link.classList.add('active')
+                console.log('active class added to', path)
+            }else {
+                link.classList.remove('active')
+            }
+        })
     }
 }
 
