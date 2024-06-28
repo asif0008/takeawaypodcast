@@ -8,7 +8,7 @@ class CustomHeader extends HTMLElement {
                         <img class="w-[60px] md:w-[80px]" src="assets/images/logo.png" alt="logo">
                     </a>
                     <nav class="flex items-center justify-center gap-4 md:gap-8 lg:gap-16 hidden lg:flex">
-                        <a class="text-base font-semibold text-white nav-link" href="index.html">Home</a>
+                        <a class="text-base font-semibold text-white nav-link" href="">Home</a>
                         <a class="text-base font-semibold text-white nav-link" href="pricing.html">Pricing</a>
                         <a class="text-base font-semibold text-white nav-link" href="contact.html">Contact Us</a>
                     </nav>
@@ -25,7 +25,7 @@ class CustomHeader extends HTMLElement {
                 <div class="fixed bg-[#00000070] block lg:hidden mobile-nav-outer transition-all duration-600 inset-0 opacity-0 z-[-1] h-[100vh]">
                     <div class="w-[250px] ml-[-18rem] h-full bg-white py-8 px-4 rounded-r-md transition-all duration-700 mobile-nav-inner">
                         <nav class="flex flex-col justify-center gap-6">
-                            <a class="text-base font-semibold text-dark nav-link active" href="index.html">Home</a>
+                            <a class="text-base font-semibold text-dark nav-link" href="">Home</a>
                             <a class="text-base font-semibold text-dark nav-link" href="pricing.html">Pricing</a>
                             <a class="text-base font-semibold text-dark nav-link" href="contact.html">Contact Us</a>
                             <a href="#." class="text-white font-semibold bg-primary hover:bg-secondary transition-all duration-300 rounded-full px-4 py-2 w-[150px] flex items-center justify-center">
