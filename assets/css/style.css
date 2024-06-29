@@ -18,6 +18,10 @@ input:focus {
   outline: none !important;
 }
 
+li {
+  list-style-type: disc;
+}
+
 header .nav-link {
   position: relative;
 }

@@ -19,6 +19,10 @@ input:focus {
     outline: none !important;
 }
 
+li {
+    list-style-type: disc;
+}
+
 $primary-color: #ff6154;
 $secondary-color: #ffc421;
 
