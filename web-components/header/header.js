@@ -47,12 +47,15 @@ class CustomHeader extends HTMLElement {
         const path = window.location.pathname;
         const navLinks = this.querySelectorAll('.nav-link')
         navLinks.forEach((link) => {
-            const currentPath = path.split('/')[1]
-            if(link.getAttribute('href') === currentPath) {
-                link.classList.add('active')
-                console.log('active class added to', path)
-            }else {
-                link.classList.remove('active')
+            let linkPath = link.getAttribute('href');
+            if (linkPath === 'index.html' && (path === '/' || path === '/index.html')) {
+                link.classList.add('active');
+                console.log('active class added to', path);
+            } else if (path.includes(linkPath)) {
+                link.classList.add('active');
+                console.log('active class added to', path);
+            } else {
+                link.classList.remove('active');
             }
         })
     }
