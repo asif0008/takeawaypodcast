@@ -8,14 +8,18 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#ff6154', 
-                        secondary: '#ffc421',
-                    },
-                },
+          theme: {
+            extend: {
+              colors: {
+                primary: "#ff6154",
+                secondary: "#ffc421",
+              },
+              backgroundImage: {
+                "btn-gradient": "linear-gradient(215deg, #ff6154, #ffc421)",
+                "hover-btn-gradient": "linear-gradient(0deg, #ff6154, #ffc421)",
+              },
             },
+          },
         };
     </script>
 </head>
