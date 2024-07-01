@@ -48,6 +48,19 @@ header {
     }
 }
 
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(-15%);
+    }
+    50% {
+        transform: translateY(0);
+    }
+}
+
+.loader {
+    animation: bounce 2s infinite;
+}
+
 @media (max-width:1024px) {
     header {
         .nav-link {

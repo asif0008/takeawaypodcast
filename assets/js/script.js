@@ -27,3 +27,8 @@ document.body.addEventListener('click', () => {
 })
 
 hambarger.addEventListener('click', handleHambarger);
+
+const loader = document.querySelector('#global-loader');
+window.addEventListener('load', () => {
+    loader.style.display = 'none';
+})
