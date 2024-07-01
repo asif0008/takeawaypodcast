@@ -10,7 +10,7 @@ class CustomFooter extends HTMLElement {
                 <div>
                     <a href="https://www.takeawaypodcast.com/">
                     <img
-                        class="w-[80px] md:w-[120px]"
+                        class="w-[60px] md:w-[80px]"
                         src="assets/images/logo.png"
                         alt="logo"
                     />
