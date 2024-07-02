@@ -2,8 +2,8 @@ class CustomFooter extends HTMLElement {
     constructor() {
         super();
         this.innerHTML = `
-        <footer class="w-full bg-[#000] px-4">
-            <section class="container mx-auto pt-12 md:pt-[70px]">
+        <footer class="w-full bg-transparent px-4 relative">
+            <section class="container mx-auto pt-12 md:pt-[120px]">
                 <div
                 class="flex flex-col md:flex-row md:items-center justify-between gap-16"
                 >
@@ -69,10 +69,11 @@ class CustomFooter extends HTMLElement {
                     </div>
                 </div>
                 </div>
-                <p class="text-[#ffffff90] text-sm text-center pt-12 md:pt-[70px] pb-2">
+                <p class="text-[#ffffff90] text-sm text-center pt-12 md:pt-[120px] pb-2">
                 Copyright @ takeawaypodcast
                 </p>
             </section>
+            <section class="absolute top-0 left-0 inset-0 bg-[url('assets/images/footer-img.jpg')] bg-no-repeat bg-cover z-[-1] blur-[5px] bg-fixed"></section>
             </footer>
         `;
     }
