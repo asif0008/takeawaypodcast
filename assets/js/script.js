@@ -31,4 +31,16 @@ hambarger.addEventListener('click', handleHambarger);
 const loader = document.querySelector('#global-loader');
 window.addEventListener('load', () => {
     loader.style.display = 'none';
-})
+});
+
+(function () {
+    const locomotiveScroll = new LocomotiveScroll({
+        el: document.querySelector('.scrollContainer'),
+        smooth: true,
+        smoothMobile: true,
+        scrollFromAnywhere: true,
+        touchMultiplier: 2,
+        inertia: 0.1,
+        Multiplier: 1
+    });
+})();
