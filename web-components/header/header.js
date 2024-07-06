@@ -12,7 +12,7 @@ class CustomHeader extends HTMLElement {
                         <a class="text-base font-semibold text-white nav-link" href="pricing.html">Pricing</a>
                         <a class="text-base font-semibold text-white nav-link" href="contact.html">Contact Us</a>
                     </nav>
-                    <a href="#." class="text-white font-semibold bg-btn-gradient hover:bg-hover-btn-gradient transition-all duration-600 rounded-full px-12 py-4 hidden lg:block">
+                    <a href="/contact.html#book-now" class="text-white font-semibold bg-btn-gradient hover:bg-hover-btn-gradient transition-all duration-600 rounded-full px-12 py-4 hidden lg:block">
                         Book Now
                     </a>
                     <div class="block lg:hidden cursor-pointer hambarger">
@@ -28,7 +28,7 @@ class CustomHeader extends HTMLElement {
                             <a class="text-base font-semibold text-dark nav-link" href="index.html">Home</a>
                             <a class="text-base font-semibold text-dark nav-link" href="pricing.html">Pricing</a>
                             <a class="text-base font-semibold text-dark nav-link" href="contact.html">Contact Us</a>
-                            <a href="#." class="text-white font-semibold bg-primary hover:bg-secondary transition-all duration-300 rounded-full px-4 py-2 w-[150px] flex items-center justify-center">
+                            <a href="/contact.html#book-now" class="text-white font-semibold bg-primary hover:bg-secondary transition-all duration-300 rounded-full px-4 py-2 w-[150px] flex items-center justify-center">
                                 Book Now
                             </a>
                         </nav>
